@@ -2,12 +2,13 @@ package se.lexicon;
 
 public class Main {
     public static void main(String[] args) {
+
+        // Hello World
         System.out.println("Hello Group 48!");
 
 
+        // DECLARE VARIABLES
         /*
-
-        // Declared a Variable
         // DATATYPE name = VALUE;
         byte redColorCode = 127;
         byte greenColorCode = -128;
@@ -35,7 +36,10 @@ public class Main {
         System.out.println(redColorCode);
         System.out.println(studentPresent);
         System.out.println(omega);
+                 */
 
+        // OPERATORS
+        /*
         int number1;
         number1 = 10;
 
@@ -76,9 +80,11 @@ public class Main {
         boolean result10 = number10 < number20;
         System.out.println("result10 = " + result10);
 
-         */
+        */
 
-        /*
+
+        // SELECTION
+        /**
         * 1. If grade is 65 or above = you passed
         * 2. if grade is 55 or above = your close but not passed
         * 3. else not passed
