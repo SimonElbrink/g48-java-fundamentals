@@ -249,17 +249,22 @@ public class Main {
             System.out.println("Just ones, no more.");
         }while(false);
 
+
+        //FOR-LOOP
+        System.out.println("Increments 0-9");
         for (int i=0; i < 10; i++){
             System.out.println(i);
         }
 
+        System.out.println("Decrements 100-1");
         for (int i = 100; i > 0 ;i--){
             System.out.println(i);
         }
 
+        // 1,3,5 Odd
+        // 2,4,6 Even
         System.out.println("Odd or Even?");
         for (int i = 1; i <= 6; i++){
-
             if (i % 2 == 0){
                 System.out.println("Number " + i + " is a Even Number!");
             }else {
