@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Hello World
-        System.out.println("Hello Group 48!");
+//        System.out.println("Hello Group 48!");
 
 
         // DECLARE VARIABLES
@@ -36,7 +36,7 @@ public class Main {
         System.out.println(redColorCode);
         System.out.println(studentPresent);
         System.out.println(omega);
-                 */
+        */
 
         // OPERATORS
         /*
@@ -84,11 +84,10 @@ public class Main {
 
 
         // SELECTION
-        /**
-        * 1. If grade is 65 or above = you passed
-        * 2. if grade is 55 or above = your close but not passed
-        * 3. else not passed
-        * */
+        /*
+        // 1. If grade is 65 or above = you passed
+        // 2. if grade is 55 or above = your close but not passed
+        // 3. else not passed
 
         int grade = 65;
 
@@ -100,13 +99,153 @@ public class Main {
             System.out.println("You did not Pass The Test!");
         }
 
+        // CEO, MANAGER, SUPPORT, TEACHER
+        String employee = "MANAGER";
+
+        switch (employee){
+            case "CEO":
+                System.out.println("Hello, here is the report about the company's Health");
+                break;
+
+            case "MANAGER":
+                System.out.println("Hello and Welcome back, here is the Report you asked about Yesterday!");
+                break;
+
+            default:
+                System.out.println("Hm.. Not Sure who you are but i guess.. Welcome?");
+        }
+
+        */
+
+
+        // STRING
+        /*
+        // syntax -> ""
+        // TYPE - String (Capital "S")
+
+        String aWord = "Hi";
+        String sentence = "Hello Java Group 48";
+        String aName = "Simon";
+
+        //1. Object starts with uppercase
+        //2. Have methods
+
+        System.out.println(sentence);
+        System.out.println(sentence.toUpperCase());
+
+        //String s = new String("String Value");
+
+        //int i = 1000;
+        //i. // No methods here
+
+        */
+        /*
+
+        String firstName = "Simon";
+        String lastName = "Elbrink";
+        int birthYear = 1997;
+
+        String personInformation = firstName + " " + lastName + " Age: " + (2023 - birthYear);
+
+        System.out.println("personInformation = " + personInformation);
+
+//        firstName.concat(" Robert");
+//        firstName = firstName.concat(" Robert");
+
+        System.out.println(firstName);
+
+        System.out.println(firstName.concat(" Robert"));
+        */
+
+        // OBJECT
+        /*
+        Person simon = new Person();
+        simon.firstName = "Simon";
+        simon.lastName = "Elbrink";
+        simon.birthYear = 1997;
+
+
+        Person erik = new Person();
+        erik.firstName = "Erik";
+        erik.lastName = "Svensson";
+        erik.birthYear = 1976;
 
 
 
+//        String getSimonPersonInformation = simon.firstName + " " + simon.lastName + " Age: " + (2023 - simon.birthYear);
+//        String getErikPersonInformation = erik.firstName + " " + erik.lastName + " Age: " + (2023 - erik.birthYear);
+//        System.out.println(getSimonPersonInformation);
+
+        System.out.println( simon.getPersonInformation() );
+        System.out.println( erik.getPersonInformation() );
+
+        */
+
+        // METHODS
+        /*
+        double number1 = 10.50;
+        double number2 = 50.60;
+
+        System.out.println(addition(number1, number2));
+
+        System.out.println(addition(100.60, 350.90));
+        //System.out.println(number1 + number2);
 
 
+        greetings("G48");
+        greetings("Mehrdad");
+        */
 
 
+        // LOOPS
+        /*
+        int number = 1;
+
+        while(number >= 0 && number < 10){
+            number++;
+            System.out.println(number);
+        }
+
+
+        for (int i=0; i < 10; i++){
+            System.out.println(i);
+        }
+
+        for (int i = 100; i > 0 ;i--){
+            System.out.println(i);
+        }
+
+        System.out.println("Odd or Even?");
+        for (int i = 1; i <= 6; i++){
+
+            if (i % 2 == 0){
+                System.out.println("Number " + i + " is a Even Number!");
+            }else {
+                System.out.println("Number " + i + " is a odd Number!");
+            }
+        }
+        */
 
     }
+
+    static double addition(double num1, double num2){
+        double result = num1 + num2;
+        return result;
+    }
+
+    static void greetings(String groupName){
+        System.out.println("Greeting: " + groupName);
+    }
+
+}
+class Person{
+
+    String firstName;
+    String lastName;
+    int birthYear;
+
+    public String getPersonInformation(){
+        return firstName + " " + lastName + " Age: " + (2023 - birthYear);
+    }
+
 }
