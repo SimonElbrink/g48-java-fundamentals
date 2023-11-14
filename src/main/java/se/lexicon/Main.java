@@ -271,7 +271,47 @@ public class Main {
                 System.out.println("Number " + i + " is a odd Number!");
             }
         }
-        */
+
+
+        // BREAK & CONTINUE IN LOOPS
+
+        while(true){ // Creates an infinite loop.
+            break; // Terminates the While Loop.
+        }
+
+        /**
+         * A loop that continues to loop if your enter an age of 18 or above.
+         * Loop is terminated if year is below 18.
+         * loop is evaluated by an expression
+         * Example. Age = 18 -> Loop Continues
+         *          Age = 15 -> Loop ends
+         */
+        while (true) { // Infinite Loop
+            System.out.println("How old are you?");
+            int age = scanner.nextInt();
+
+            if (age >= 18) {
+                System.out.println("You are an adult!");
+            } else {
+                System.out.println("You are a child!");
+                break; // Ends Loop Construct
+            }
+        }
+        System.out.println("Done!");
+
+
+        /**
+         * Iterates from 0-9 prints the int value.
+         * Except of value 5 then text "Five" is printed.
+         */
+        for (int i = 0; i < 10 ;i++){
+            if (i == 5){
+                System.out.println("Five");
+                continue;
+            }
+            System.out.println(i);
+        }
+
 
     }
 
