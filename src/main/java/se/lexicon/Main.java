@@ -1,7 +1,11 @@
 package se.lexicon;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
 
         // Hello World
 //        System.out.println("Hello Group 48!");
@@ -198,14 +202,52 @@ public class Main {
 
 
         // LOOPS
-        /*
-        int number = 1;
 
-        while(number >= 0 && number < 10){
-            number++;
-            System.out.println(number);
+        //WHILE LOOP
+
+        /**
+         * A loop that continues to loop if your enter an age of 18 or above.
+         * Loop is terminated if year is below 18.
+         * loop is evaluated by an expression
+         * Example. Age = 18 -> Loop Continues
+         *          Age = 15 -> Loop ends
+         */
+        boolean isAdult = true;
+
+        while (isAdult) {
+            System.out.println("How old are you?");
+            int age = scanner.nextInt();
+
+            if (age >= 18) {
+                System.out.println("You are an adult!");
+            } else {
+                System.out.println("You are a child!");
+                isAdult = false;
+            }
         }
+        System.out.println("Done!");
 
+
+
+        /**
+         * Even if expression in while-loop is false
+         *  Do-while loop runs at least one time.
+         */
+        int number = 5;
+        do{
+            number++;
+        }
+        while(number != 0 && number <5); // false
+
+        System.out.println(number);
+
+
+        /**
+         * Do-while loop runs at least one time.
+         */
+        do {
+            System.out.println("Just ones, no more.");
+        }while(false);
 
         for (int i=0; i < 10; i++){
             System.out.println(i);
