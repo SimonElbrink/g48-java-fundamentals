@@ -5,35 +5,48 @@ import java.util.Scanner;
 public class Calculator {
 
     public static void main(String[] args) {
-        System.out.println("Enter first number");
-        System.out.print("> ");
-        double number1 = getDoubleFromUser();
 
-        System.out.println("Select a operator, (+, -, *, /)");
-        System.out.print("> ");
-        String operator = getStringFromUser();
+        while(true){
+            System.out.println("Enter first number");
+            System.out.print("> ");
+            double number1 = getDoubleFromUser();
 
-        System.out.println("Enter second number");
-        System.out.print("> ");
-        double number2 = getDoubleFromUser();
+            System.out.println("Select a operator, (+, -, *, /)");
+            System.out.print("> ");
+            String operator = getStringFromUser();
+
+            System.out.println("Enter second number");
+            System.out.print("> ");
+            double number2 = getDoubleFromUser();
 
 
-        switch (operator) {
-            case "+":
-                System.out.println(addition(number1, number2));
-                break;
-            case "-":
-                System.out.println(subtraction(number1, number2));
-                break;
-            case "*":
-                System.out.println(multiplication(number1, number2));
-                break;
-            case "/":
-                System.out.println(division(number1, number2));
-                break;
-            default:
-                System.out.println("No Operator Selected");
+            switch (operator) {
+                case "+":
+                    System.out.println(addition(number1, number2));
+                    break;
+                case "-":
+                    System.out.println(subtraction(number1, number2));
+                    break;
+                case "*":
+                    System.out.println(multiplication(number1, number2));
+                    break;
+                case "/":
+                    System.out.println(division(number1, number2));
+                    break;
+                default:
+                    System.out.println("No Operator Selected");
+            }
+
+            System.out.println();
+            System.out.println("Do you want to quit the program?");
+            System.out.println("Type \"Q\" to quit, Type anything else to continue");
+            System.out.print("> ");
+            String nextRound = getStringFromUser();
+            if (nextRound.equalsIgnoreCase("Q")){
+                break; // Terminates the Loop.
+            }
         }
+
 
     }
 
