@@ -18,10 +18,22 @@ public class Calculator {
         double number2 = getDoubleFromUser();
 
 
-        System.out.println("number1 = " + number1);
-        System.out.println(operator);
-        System.out.println("number2 = " + number2);
-        System.out.println("Result = NOT IMPLEMENTED");
+        switch (operator) {
+            case "+":
+                System.out.println(addition(number1, number2));
+                break;
+            case "-":
+                System.out.println(subtraction(number1, number2));
+                break;
+            case "*":
+                System.out.println(multiplication(number1, number2));
+                break;
+            case "/":
+                System.out.println(division(number1, number2));
+                break;
+            default:
+                System.out.println("No Operator Selected");
+        }
 
     }
 
