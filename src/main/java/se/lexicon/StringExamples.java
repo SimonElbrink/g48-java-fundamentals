@@ -3,11 +3,11 @@ package se.lexicon;
 public class StringExamples {
     public static void main(String[] args) {
 
-        BasicString();
+        basicString();
         concatenateString();
     }
 
-    private static void BasicString() {
+    private static void basicString() {
         // syntax -> ""
         // TYPE - String (Capital "S")
 
