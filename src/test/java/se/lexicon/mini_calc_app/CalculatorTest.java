@@ -8,8 +8,19 @@ class CalculatorTest {
 
 
     @Test
-    void First_test() {
-        boolean implemented = false;
-        assertTrue(implemented);
+    public void test_addition(){
+
+        //Arrange
+        double number1 = 70;
+        double number2 = 30;
+        double expected = 100;
+
+        //Act
+        double actual = Calculator.addition(number1,number2);
+
+        //Assert
+        assertEquals(expected, actual);
+
     }
+
 }
