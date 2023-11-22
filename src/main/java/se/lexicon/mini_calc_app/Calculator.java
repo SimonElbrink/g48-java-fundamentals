@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.mini_calc_app;
 
 import java.util.Scanner;
 
