@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.lexicon</groupId>
-    <artifactId>g48-first-maven-project</artifactId>
+    <artifactId>g48-java-fundamentals</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
